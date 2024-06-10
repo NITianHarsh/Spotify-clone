@@ -57,6 +57,9 @@ button {
     border-radius: 10px;
     flex-grow: 1;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .divider {
     background-color: black;
@@ -203,7 +206,7 @@ section a .zoom-btn:hover {
     font-size: 15px;
     border-radius: 30px;
     color: white;
-    background-color: rgb(78, 76, 76);
+    background-color: #4e4c4c;
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -224,3 +227,70 @@ button img{
 
 
 /*--------------------------------------   Right    -----------------------------------------*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #121212;
+    padding: 15px;
+}
+.button{
+    display: flex;
+    gap: 10px;
+}
+.button img{
+    height: 25px;
+}
+.join{
+    display: flex;
+    gap: 10px;
+}
+.join button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.join .two:hover {
+    transform: scale(1.1);
+}
+
+.artists{
+    background: rgb(18,18,18);
+    background: linear-gradient(0deg, rgba(18,18,18,1) 28%, rgba(78,76,76,1) 100%);
+}
+footer{
+    background-color: #121212;
+    flex-grow: 1;
+}
+.partl {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+ul li:first-child {
+    font-weight: bold;
+    color: #fff;
+}
+ul li:not(:first-child) {
+    color: #bbb;
+}
+/* Responsive styling */
+@media (min-width: 600px) {
+    .partl {
+        flex-direction: row;
+    }
+    ul {
+        margin: 0 20px;
+    }
+}
